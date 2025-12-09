@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Borrow-A-Friend</title>
+		
+		<link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="styles/basic.css">
+		<link rel="stylesheet" type="text/css" href="styles/friends.css">
+		
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		
+	</head>
+	
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="#">Borrow-A-Friend</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav">
+					<a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+					<a class="nav-item nav-link" href="friends.html">Friends</a>
+				</div>
+			</div>
+		</nav>
+	</header>
+	
+	<br>
+	
+	<body>
+		<div class="filters">
+			<div class="form-group">
+				<label for="orderBy">Order By</label>
+				<select id="orderBy" name="orderBy">
+					<option value="name">Name</option>
+					<option value="price">Price</option>
+				</select>
+				
+			</div>
+
+			<div class="form-group">
+				<label for="price">Price Range</label>	
+				<select id="price" name="price">
+					<option value="all">All</option>
+					<option value="low">Under $20</option>
+					<option value="med">$20-$39</option>
+					<option value="high">$40 and more</option>
+				</select>
+			</div>
+			
+			<div class="form-group">
+				<label for="color">Favorite Color</label>
+				<select id="color" name="color">
+					<option value="any">N/A</option>
+					<option value="black">Black</option>
+					<option value="blue">Blue</option>
+					<option value="purple">Purple</option>
+				</select>
+			</div>
+		<div>
+		
+		<script src="js/friends.js"></script>
+		
+		<div class="cardArea">
+			<div class="row">
+				<div class="column">
+					<div class="card" id="nicole">
+						<img src="img/Nicole.jpg" style="width=100%">
+						<div class="container" align="center">
+							<h4><b>Nicole</b></h4>
+							<p>$12 hourly</p>
+						</div>
+					</div>
+				</div>
+				<div class="column">
+					<div class="card" id="andrea">
+						<img src="img/Andrea.jpg" style="width=100%">
+						<div class="container" align="center">
+							<h4><b>Andrea</b></h4>
+							<p>$20 hourly</p>
+						</div>
+					</div>
+				</div>
+				<div class="column">
+					<div class="card" id="adel">
+						<img src="img/Adel.jpg" style="width=100%">
+						<div class="container" align="center">
+							<h4><b>Adel</b></h4>
+							<p>$50 hourly</p>
+						</div>
+					</div>
+				</div>
+				<div class="column">
+					<div class="card" id="jazmine">
+						<img src="img/Jazmine.jpg" style="width=100%">
+						<div class="container" align="center">
+							<h4><b>Jazmine</b></h4>
+							<p>$90 hourly</p>
+						</div>
+					</div>
+				</div>
+				<div class="column">
+					<div class="card" id="olivia">
+						<img src="img/Olivia.jpg" style="width=100%">
+						<div class="container" align="center">
+							<h4><b>Olivia</b></h4>
+							<p>$30 hourly</p>
+						</div>
+					</div>
+				</div>
+				<div class="column">
+					<div class="card" id="margaret">
+						<img src="img/Margaret.jpg" style="width=100%">
+						<div class="container" align="center">
+							<h4><b>Margaret</b></h4>
+							<p>$15 hourly</p>
+						</div>
+					</div>
+				</div>
+				<div class="column">
+					<div class="card" id="john">
+						<img src="img/John.jpg" style="width=100%">
+						<div class="container" align="center">
+							<h4><b>John</b></h4>
+							<p>$2 hourly</p>
+						</div>
+					</div>
+				</div>
+				<div class="column">
+					<div class="card" id="rati">
+						<img src="img/Rati.jpg" style="width=100%">
+						<div class="container" align="center">
+							<h4><b>Rati</b></h4>
+							<p>$40 hourly</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

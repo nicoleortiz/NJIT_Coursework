@@ -1,0 +1,23 @@
+html {
+	background-color: #99e6ff;
+}
+header, footer {
+	background-color: white;
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 2%;
+}
+header a {
+	font-family: "Brush Script MT", cursive;  
+	font-style: normal; 
+	font-variant: normal;
+}
+.navbar-brand {
+	color: black;
+	font-size: 250%;
+}
+.navbar-brand:hover {
+	color: blue;
+	text-decoration: none;
+}

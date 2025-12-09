@@ -1,0 +1,91 @@
+{
+    "friends": [
+        {
+            "imgPath": "img/Nicole.jpg",
+            "name": "Nicole",
+            "age": "22",
+            "gender": "Female",
+			"hobbies": "board games, painting, reading, skateboarding, music",
+			"study": "Information Technology",
+			"color": "Blue",
+			"description": "I like to hang out and play board games and go on adventures!",
+			"price": "12"
+        },
+        {
+            "imgPath": "img/Andrea.jpg",
+            "name": "Andrea",
+            "age": "21",
+            "gender": "Female",
+			"hobbies": "Sewing, Baking, Videogames, Watching Anime",
+			"study": "Information Technology",
+			"color": "Purple",
+			"description": "I feed people my snacks to get rid of them/because I get sick of the smell of my own sweets",
+			"price": "20"
+        },
+		{
+            "imgPath": "img/Adel.jpg",
+            "name": "Adel",
+            "age": "22",
+            "gender": "Male",
+			"hobbies": "Business, World Domination, Pretending to be president, World Reformation ideals",
+			"study": "Engineering",
+			"color": "Black",
+			"description": "I'm a business man running my own music company, studying engineering, and working in construction/concrete.",
+			"price": "50"
+        },
+		{
+            "imgPath": "img/Jazmine.jpg",
+            "name": "Jazmine",
+            "age": "22",
+            "gender": "Female",
+			"hobbies": "Viola, singing, video games",
+			"study": "Information Technology",
+			"color": "Purple",
+			"description": "I'm a simple girl with simple pleasures. I like sitting in bed having deep conversations and long walks on summer nights. I HATE the heat any temperature below 45 is CRIMINAL. Popcorn is my favorite snack and music is the only thing keeping my heart beating :)",
+			"price": "90"
+        },
+		{
+            "imgPath": "img/Olivia.jpg",
+            "name": "Olivia",
+            "age": "22",
+            "gender": "Female",
+			"hobbies": "Reading, music",
+			"study": "Psychology",
+			"color": "Blue ",
+			"description": "I’m a college student interested in art, music, activism, tv shows and makeup lol :))",
+			"price": "30"
+        },
+		{
+            "imgPath": "img/Margaret.jpg",
+            "name": "Margaret",
+            "age": "22",
+            "gender": "Female",
+			"hobbies": "Anime, movies, painting, boardgames and chilling with friends.",
+			"study": "Pre-law",
+			"color": "Purple",
+			"description": "Hewwo. I'm a good listener, silly and stoopid. Love playing games with friends, cracking jokes, and having a fun time.",
+			"price": "15"
+        },
+		{
+            "imgPath": "img/John.jpg",
+            "name": "John",
+            "age": "21",
+            "gender": "Male",
+			"hobbies": "EMT/FF and video games",
+			"study": "Environment Science",
+			"color": "Blue",
+			"description": "I have dedicated a lot of my life to learning how to help others.",
+			"price": "2"
+        },
+		{
+            "imgPath": "img/Rati.jpg",
+            "name": "Rati",
+            "age": "22",
+            "gender": "Female",
+			"hobbies": "Drawing, making Crafts, playing video games",
+			"study": "Information Technology",
+			"color": "Purple",
+			"description": "I'm perpetually sleepy, and really like sheeps!",
+			"price": "40"
+        }
+}
