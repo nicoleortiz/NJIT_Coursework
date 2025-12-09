@@ -1,0 +1,11 @@
+C:\Users\Nicole\Documents\GitHub\IS421\HelloWorld_CS\HelloWorld_CS\bin\Debug\netcoreapp3.1\HelloWorld_CS.exe
+C:\Users\Nicole\Documents\GitHub\IS421\HelloWorld_CS\HelloWorld_CS\bin\Debug\netcoreapp3.1\HelloWorld_CS.deps.json
+C:\Users\Nicole\Documents\GitHub\IS421\HelloWorld_CS\HelloWorld_CS\bin\Debug\netcoreapp3.1\HelloWorld_CS.runtimeconfig.json
+C:\Users\Nicole\Documents\GitHub\IS421\HelloWorld_CS\HelloWorld_CS\bin\Debug\netcoreapp3.1\HelloWorld_CS.runtimeconfig.dev.json
+C:\Users\Nicole\Documents\GitHub\IS421\HelloWorld_CS\HelloWorld_CS\bin\Debug\netcoreapp3.1\HelloWorld_CS.dll
+C:\Users\Nicole\Documents\GitHub\IS421\HelloWorld_CS\HelloWorld_CS\bin\Debug\netcoreapp3.1\HelloWorld_CS.pdb
+C:\Users\Nicole\Documents\GitHub\IS421\HelloWorld_CS\HelloWorld_CS\obj\Debug\netcoreapp3.1\HelloWorld_CS.csprojAssemblyReference.cache
+C:\Users\Nicole\Documents\GitHub\IS421\HelloWorld_CS\HelloWorld_CS\obj\Debug\netcoreapp3.1\HelloWorld_CS.AssemblyInfoInputs.cache
+C:\Users\Nicole\Documents\GitHub\IS421\HelloWorld_CS\HelloWorld_CS\obj\Debug\netcoreapp3.1\HelloWorld_CS.AssemblyInfo.cs
+C:\Users\Nicole\Documents\GitHub\IS421\HelloWorld_CS\HelloWorld_CS\obj\Debug\netcoreapp3.1\HelloWorld_CS.dll
+C:\Users\Nicole\Documents\GitHub\IS421\HelloWorld_CS\HelloWorld_CS\obj\Debug\netcoreapp3.1\HelloWorld_CS.pdb

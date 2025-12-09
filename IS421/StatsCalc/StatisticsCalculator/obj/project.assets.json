@@ -1,0 +1,220 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Addition/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "MathOperations": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Addition.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Addition.dll": {}
+        }
+      },
+      "basicCalculator/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Addition": "1.0.0",
+          "Division": "1.0.0",
+          "MathOperations": "1.0.0",
+          "Multiplication": "1.0.0",
+          "Square": "1.0.0",
+          "SquareRoot": "1.0.0",
+          "Subtraction": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/basicCalculator.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/basicCalculator.dll": {}
+        }
+      },
+      "Division/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "MathOperations": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Division.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Division.dll": {}
+        }
+      },
+      "MathOperations/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/MathOperations.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MathOperations.dll": {}
+        }
+      },
+      "Multiplication/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "MathOperations": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Multiplication.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Multiplication.dll": {}
+        }
+      },
+      "Square/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "MathOperations": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Square.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Square.dll": {}
+        }
+      },
+      "SquareRoot/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "MathOperations": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SquareRoot.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SquareRoot.dll": {}
+        }
+      },
+      "Subtraction/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "MathOperations": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Subtraction.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Subtraction.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Addition/1.0.0": {
+      "type": "project",
+      "path": "../Addition/Addition.csproj",
+      "msbuildProject": "../Addition/Addition.csproj"
+    },
+    "basicCalculator/1.0.0": {
+      "type": "project",
+      "path": "../basicCalculator/basicCalculator.csproj",
+      "msbuildProject": "../basicCalculator/basicCalculator.csproj"
+    },
+    "Division/1.0.0": {
+      "type": "project",
+      "path": "../Division/Division.csproj",
+      "msbuildProject": "../Division/Division.csproj"
+    },
+    "MathOperations/1.0.0": {
+      "type": "project",
+      "path": "../MathOperations/MathOperations.csproj",
+      "msbuildProject": "../MathOperations/MathOperations.csproj"
+    },
+    "Multiplication/1.0.0": {
+      "type": "project",
+      "path": "../Multiplication/Multiplication.csproj",
+      "msbuildProject": "../Multiplication/Multiplication.csproj"
+    },
+    "Square/1.0.0": {
+      "type": "project",
+      "path": "../Square/Square.csproj",
+      "msbuildProject": "../Square/Square.csproj"
+    },
+    "SquareRoot/1.0.0": {
+      "type": "project",
+      "path": "../SquareRoot/SquareRoot.csproj",
+      "msbuildProject": "../SquareRoot/SquareRoot.csproj"
+    },
+    "Subtraction/1.0.0": {
+      "type": "project",
+      "path": "../Subtraction/Subtraction.csproj",
+      "msbuildProject": "../Subtraction/Subtraction.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "basicCalculator >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Nicole\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Nicole\\Documents\\GitHub\\421GroupStatsCalc\\StatisticsCalculator\\StatisticsCalculator.csproj",
+      "projectName": "StatisticsCalculator",
+      "projectPath": "C:\\Users\\Nicole\\Documents\\GitHub\\421GroupStatsCalc\\StatisticsCalculator\\StatisticsCalculator.csproj",
+      "packagesPath": "C:\\Users\\Nicole\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Nicole\\Documents\\GitHub\\421GroupStatsCalc\\StatisticsCalculator\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Nicole\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {
+            "C:\\Users\\Nicole\\Documents\\GitHub\\421GroupStatsCalc\\basicCalculator\\basicCalculator.csproj": {
+              "projectPath": "C:\\Users\\Nicole\\Documents\\GitHub\\421GroupStatsCalc\\basicCalculator\\basicCalculator.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

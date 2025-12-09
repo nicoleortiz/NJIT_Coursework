@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="827.0" prefWidth="1000.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="assignment2.FXMLDocumentController">
+  <children>
+    <Label fx:id="label" layoutX="308.0" layoutY="32.0" minHeight="16.0" minWidth="69.0" prefWidth="384.0" text="Create Your Perfect Car" textAlignment="CENTER" underline="true">
+      <font>
+        <Font size="36.0" />
+      </font>
+    </Label>
+    <Label layoutX="346.0" layoutY="109.0" text="Name: " />
+    <TextField layoutX="429.0" layoutY="103.0" prefWidth="200.0" />
+    <Label layoutX="43.0" layoutY="175.0" text="Car Make:" />
+    <Pane layoutX="161.0" layoutY="175.0" prefHeight="215.0" prefWidth="185.0">
+      <children>
+        <RadioButton layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Honda" />
+        <RadioButton layoutX="14.0" layoutY="46.0" mnemonicParsing="false" text="Ford" />
+        <RadioButton layoutX="14.0" layoutY="78.0" mnemonicParsing="false" text="Mercedes" />
+        <RadioButton layoutX="14.0" layoutY="110.0" mnemonicParsing="false" text="GM" />
+        <RadioButton layoutX="14.0" layoutY="142.0" mnemonicParsing="false" text="Nissan" />
+        <RadioButton layoutX="14.0" layoutY="174.0" mnemonicParsing="false" text="Cadillac" />
+      </children>
+    </Pane>
+    <Label layoutX="43.0" layoutY="412.0" text="Car Model:" />
+    <Pane layoutX="161.0" layoutY="412.0" prefHeight="215.0" prefWidth="185.0">
+      <children>
+        <RadioButton layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Sedan" />
+        <RadioButton layoutX="14.0" layoutY="46.0" mnemonicParsing="false" text="SVU" />
+        <RadioButton layoutX="14.0" layoutY="78.0" mnemonicParsing="false" text="Coupe" />
+        <RadioButton layoutX="14.0" layoutY="110.0" mnemonicParsing="false" text="Convertible" />
+        <RadioButton layoutX="14.0" layoutY="142.0" mnemonicParsing="false" text="Hatchback" />
+      </children>
+    </Pane>
+    <Label layoutX="43.0" layoutY="626.0" text="Car Color:" />
+    <Pane layoutX="161.0" layoutY="626.0" prefHeight="215.0" prefWidth="185.0">
+      <children>
+        <RadioButton layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="White" />
+        <RadioButton layoutX="14.0" layoutY="46.0" mnemonicParsing="false" text="Silver" />
+        <RadioButton layoutX="14.0" layoutY="78.0" mnemonicParsing="false" text="Black" />
+        <RadioButton layoutX="14.0" layoutY="110.0" mnemonicParsing="false" text="Blue" />
+        <RadioButton layoutX="14.0" layoutY="142.0" mnemonicParsing="false" text="Red" />
+      </children>
+    </Pane>
+    <Label layoutX="441.0" layoutY="178.0" text="Amenities / Add-Ons" />
+    <Pane layoutX="507.0" layoutY="207.0" prefHeight="290.0" prefWidth="185.0">
+      <children>
+        <RadioButton layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Heated Seats" />
+        <RadioButton layoutX="14.0" layoutY="46.0" mnemonicParsing="false" text="AirConditioned Seats" />
+        <RadioButton layoutX="14.0" layoutY="78.0" mnemonicParsing="false" text="Backup Camera" />
+        <RadioButton layoutX="14.0" layoutY="110.0" mnemonicParsing="false" text="Super Sound System" />
+        <RadioButton layoutX="14.0" layoutY="142.0" mnemonicParsing="false" text="Navigation Systems" />
+        <RadioButton layoutX="14.0" layoutY="174.0" mnemonicParsing="false" text="Blue-Tooth Connectivity" />
+        <RadioButton layoutX="14.0" layoutY="206.0" mnemonicParsing="false" text="Keyless Entry" />
+        <RadioButton layoutX="14.0" layoutY="238.0" mnemonicParsing="false" text="Automatic Emergency Braking" />
+      </children>
+    </Pane>
+    <Button layoutX="577.0" layoutY="683.0" mnemonicParsing="false" text="Build My Car!" />
+  </children>
+</AnchorPane>
