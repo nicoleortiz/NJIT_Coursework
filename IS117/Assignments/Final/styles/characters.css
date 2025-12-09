@@ -1,0 +1,50 @@
+.fit{
+  height: 250px;
+  width: 175px;
+  padding: 15px;
+  padding-bottom: 0px;
+  margin: 0px 0px 15px 15px;
+}
+sizeDiv{
+  height: 325px;
+}
+p{
+  padding: 0px 10px;
+}
+p span{
+  background-color: rgba(255, 255, 255, .50);
+  padding: 0px 5px;
+}
+h2{
+  font-size: 30px;
+}
+.jumpMenu{
+  position: relative;
+}
+.jumpMenu img{
+  height: 150px;
+  width: 600px;
+  padding: 0 105px;
+  float: center;
+}
+.jumpText{
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 15px;
+  width: 100%;
+}
+.jumpText ul{
+  list-style-type: none;
+  padding-left: 210px;
+}
+.jumpText ul li{
+  float: left;
+  padding: 0 20px;
+}
+
+@media only screen and (max-width: 1050px) {
+  p{
+    font-size: 50%;
+  }
+}

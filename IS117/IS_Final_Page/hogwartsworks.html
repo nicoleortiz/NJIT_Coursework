@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>IS 117 Final</title>
+		<link rel="stylesheet" href="styles/base.css">
+		<link rel="stylesheet" href="styles/hogwarts.css">
+		
+		<script>
+			function getGryffindor(){
+				// document.getElementById("description").innerHTML = "Gryffindor";
+				document.getElementById("description").innerHTML = "Gryffindor";
+			}
+			function getRavenclaw(){
+				document.getElementById("description").innerHTML = "Ravenclaw";
+			}
+			function getHufflepuff(){
+				document.getElementById("description").innerHTML = "Hufflepuff";
+			}
+			function getSlytherin(){
+				var oFrame = document.getElementById("frmFile");
+        var strRawContents = oFrame.contentWindow.document.body.childNodes[0].innerHTML;
+
+        var arrLines = strRawContents.split("\n");
+        var curLine = "";
+        for (var i = 0; i < arrLines.length; i++) {
+          curLine = curLine + arrLines[i] + "<br/>";
+        }
+        document.getElementById("description").innerHTML = curLine;
+			}
+			
+			function getAttempt(){
+         var xmlhttp = new XMLHttpRequest();
+         xmlhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            var allLine = xmlhttp.responseText;
+            var lines = xmlhttp.responseText.split("\n");
+            for(var i =0; i <= lines.length; i++)
+            {
+              document.getElementById("description").innerHTML = lines[i] + "</br>";
+            }
+          }
+        };
+        xmlhttp.open("GET", "Document.txt", true);
+        xmlhttp.send();
+			}
+		</script>
+		
+	</head>
+	<body>
+		<div class="containerNav">
+			<header id="heading">
+				<img src="images/logo2.png" alt="logo2" class="TallLogo">
+				<br/>
+				<ul align="right">
+					<li><a href="" class="HufYellow" style="width: 120px;">Characters</a>
+						<ul>
+							<li><a href="students.html">Students</a></li>
+							<li><a href="adults.html">Adults</a></li>
+						</ul>
+					</li>
+					<li><a href="hogwarts.html" class="GryRed" style="width: 100px;">Hogwarts</a></li>
+					<li><a href="books.html" class="RavBlue" style="width: 75px;">Books</a></li>
+					<li><a href="index.html" class="SlyGreen" style="width: 75px;">Home</a></li>
+				</ul>
+			</header>
+		</div>
+		<div class="containerMain" align="center">
+			<img src="images/hogwarts/motto.png" alt="motto">
+			<div class="diet">
+				<h2>Hogwarts: A History</h2>
+				<p>Hogwarts School of Witchcraft and Wizardry is the magical school catering to the British
+			citizens of the world. It is located in the Highlands of Scotland under a spell that keeps 
+			away muggles (non-magical people). Children with magical ablities in Great Britain, Northern 
+			Ireland, and Ireland are automatically enrolled at birth, upon their eleventh birthday, the 
+			same children are sent an owl post to confirm their attendance (except in the case of muggle 
+			borns, then a Professor is sent).</p>
+				<p>With four founders: Godric Gryffindor, Helga Hufflepuff, Rowena Ravenclaw, and Salazar 
+			Slytherin, Hogwarts was created to protect and educate magical children. It was founded roughly 
+			around 990 A.D. and has continued to be one of the most prestigious magical learning schools in 
+			the world.</p>
+				<br/><br/>
+			</div>
+			
+			<div class="houses">
+				<img src="images/hogwarts/gryffindor.png" alt="gryffin" onclick="getGryffindor()">
+				<img src="images/hogwarts/ravenclaw.png" alt="raven" onclick="getRavenclaw()">
+				<img src="images/hogwarts/hufflepuff.png" alt="huffle" onclick="getHufflepuff()">
+				<img src="images/hogwarts/slytherin.png" alt="slyther" onclick="getSlytherin()">
+				
+				<p id="description">^ Choose A House Crest ^</p>
+        <iframe id="frmFile" src="Document.txt" onload="LoadFile();" style="display: none;"></iframe>
+			</div>
+			
+			<div >
+				
+			</div>
+		</div>
+	</body>
+	<br/>
+	<footer class="containerFoot" align="center">
+		<p>All rights to the Harry Potter brand belong to JK Rowling
+		(book series rights) and Warner Bros (film rights)</p>
+		<h4 align="center">Links:</h4>
+		<a href="https://www.pottermore.com/" alt="PotterMore">Pottermore</a>
+		<a href="http://www.harrypottershop.com/" alt="PotterShop">Harry Potter Shop</a>
+		<a href="http://www.the-leaky-cauldron.org/" alt="LeakyCauldron">Leaky Cauldron</a>
+		<a href="http://www.mugglenet.com/" alt="MuggleNet">Muggle Net</a>
+	</footer>
+</html>

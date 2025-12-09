@@ -1,0 +1,116 @@
+<?php
+	$dsn = 'mysql:host=sql2.njit.edu;dbname=no59';
+	$username = 'no59';
+	$password = 'H4KgQWKp';
+	
+	try {
+		$db = new PDO($dsn, $username, $password);
+	}
+	catch (PDOException $e) {
+		echo 'Database Connection Error';
+	}
+?>
+
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6 lt8"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7 lt8"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8 lt8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="UTF-8" />
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  -->
+        <title>Welcome Bands</title>
+		<link rel="stylesheet" href="css/style2.css">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+		
+    </head>
+    <body>
+        <div class="container">
+           
+            <header>
+				<img src="img/logo.png" width="100px">
+				<br/>
+            </header>
+            <section>			
+                <div id="container_demo" >
+                    <a class="hiddenanchor" id="toregister"></a>
+                    <a class="hiddenanchor" id="tologin"></a>
+                    <div id="wrapper">
+                        <div id="login" class="animate form">
+                            <form  action="welcome.php#tologin" method="post" autocomplete="on"> 
+                                <h1>Log in</h1>
+                                    <label> Your email</label>
+                                    <input name="emaillog" required="required" type="text" placeholder="myusername or mymail@mail.com"/>
+                                    
+                                    <label> Your password </label>
+                                    <input name="passwordlog" required="required" type="password" placeholder="eg. X8df!90EO" /> 
+                                    
+                                <p class="login button"> 
+                                   <input type="submit" name="login" value="Login"/>
+								                </p>
+                                                                                                                  
+                                <p class="change_link">
+									                Not a member yet ?
+									                <a href="#toregister" class="to_register">Join us</a>
+								                </p>
+                            </form>
+                        </div>
+
+                        <div id="register" class="animate form">
+                            <form  action="welcome.php#toregister" method="post"> 
+                                <h1> Sign up </h1> 
+                                    
+                                    <label>First Name</label>
+                                    <input name="fname" required="required" type="text" placeholder="John" />
+                                    
+                                    <br><br>
+                                    
+                                    <label>Last Name</label>
+                                    <input name="lname" required="required" type="text" placeholder="Doe" />
+
+                                    <br><br>
+                                    
+                                    <label>Email</label>
+                                    <input name="email" required="required" type="text" placeholder="mysupermail@mail.com" /> 
+                                    <br><br>
+                                    
+                                    <label>Phone</label>
+                                    <input name="phone" required="required" type="text" placeholder="0000000000" />
+                                    
+                                    <br><br>
+                                    
+                                    <label>Birthday</label>
+                                    <input type="date" name="birthday">
+                                    
+                                    <br><br>
+                                    
+                                    <label>Gender</label><br>
+                                    <div style="padding-left: 15px">
+                                      <input type="radio" name="gender" value="male"> Male<br>
+                                      <input type="radio" name="gender" value="female"> Female<br>
+                                      <input type="radio" name="gender" value="other" checked> Other
+                                    </div>
+                                    <br>
+                                    
+                                    <label>Password </label>
+                                    <input name="password" required="required" type="text" placeholder="eg. X8df!90EO"/>
+                                    <br><br>
+                                    
+                                  <p class="signin button"> 
+									                  <input type="submit" value="Sign Up"/> 
+								                  </p>
+                                                                                                           
+                                <p class="change_link">  
+									Already a member ?
+									<a href="#tologin" class="to_register"> Go and log in </a>
+								</p>
+                            </form>
+                        </div>
+                    </div>
+                </div>  
+            </section>
+        </div>
+    </body>
+</html>

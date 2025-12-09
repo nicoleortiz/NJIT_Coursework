@@ -1,0 +1,94 @@
+<!-- FIRST PAGE : LOGIN / REGISTER -->
+
+<?php
+	$dsn = 'mysql:host=sql2.njit.edu;dbname=no59';
+	$username = 'no59';
+	$password = 'H4KgQWKp';
+	
+	try {
+		$db = new PDO($dsn, $username, $password);
+	}
+	catch (PDOException $e) {
+		echo 'Database Connection Error';
+	}
+?>
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Keep Track, Simply</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+		
+    </head>
+    <body>
+        <div class="container">
+            <section>
+              <div style="float: left; width: 50%; padding-top: 5%; color: #fafafa; text-shadow: 0 0 5px #404040;">
+                <h1 style="font-size: 80px; ">Keep Track Of Your To-Do's.</h1>
+                <br><br>
+                <h1 style="font-size: 100px;">Simply.</h1>
+                <br><br><br><br><br>
+                <h3 style="color: #fafafa">Created by Nicole Ortiz for IS218 Project #2</h1>
+              </div>
+            </section>
+            <section>			
+                <div id="container_demo" >
+                    <a class="hiddenanchor" id="toregister"></a>
+                    <a class="hiddenanchor" id="tologin"></a>
+                    <div id="wrapper">
+                        <div id="login" class="animate form">
+                            <form  action="welcome.php#tologin" method="post" autocomplete="off"> 
+                                <h1>Log in</h1>
+                                    <label> Username</label>
+                                    <input name="user" required="required" type="text" placeholder="Username"/>
+                                    
+                                    <label> Password </label>
+                                    <input name="pass" required="required" type="password" placeholder="eg. X8df!90EO" /> 
+                                    
+                                <p class="login button"> 
+                                   <input type="submit" name="login" value="Login"/>
+								                </p>
+                                                                                                                  
+                                <p class="change_link">
+									                Not a member yet ?
+									                <a href="#toregister" class="to_register">Join us</a>
+								                </p>
+                            </form>
+                        </div>
+
+                        <div id="register" class="animate form">
+                            <form  action="welcome.php#toregister" method="post"> 
+                                <h1> Sign up </h1> 
+                                    
+                                    <label>Full Name</label>
+                                    <input name="name" required="required" type="text" placeholder="John Doe" />
+                                    
+                                    <br><br>
+                                    
+                                    <label>Username</label>
+                                    <input name="username" required="required" type="text" placeholder="Username" /> 
+                                    <br><br>
+                                    
+                                    <label>Password </label>
+                                    <input name="password" required="required" type="text" placeholder="eg. X8df!90EO"/>
+                                    <br><br>
+                                    
+                                  <p class="signin button"> 
+									                  <input type="submit" value="Sign Up"/> 
+								                  </p>
+                                                                                                           
+                                <p class="change_link">  
+									Already a member ?
+									<a href="#tologin" class="to_register"> Go and log in </a>
+								</p>
+                            </form>
+                        </div>
+                    </div>
+                </div>  
+            </section>
+        </div>
+    </body>
+</html>

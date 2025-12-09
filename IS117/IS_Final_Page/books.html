@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>IS 117 Final</title>
+		<link rel="stylesheet" href="styles/base.css">
+		<link rel="stylesheet" href="styles/books.css">
+		
+		<script>
+		viewSynopsis(){
+			var oFrame = document.getElementById("synopsis");
+			var strRawContents = oFrame.contentWindow.document.body.childNodes[0].innerHTML;
+
+			var arrLines = strRawContents.split("\n");
+			var curLine = "";
+			for (var i = 0; i < arrLines.length; i++) {
+				curLine = curLine + arrLines[i] + "<br/>";
+			}
+			document.getElementById("description").innerHTML = curLine;
+		}
+		</script>
+	</head>
+	<body onload="showSection('intro')">
+		<div class="containerNav">
+			<header id="heading">
+				<img src="images/logo2.png" alt="logo2" class="TallLogo">
+				<br/>
+				<ul align="right">
+					<li><a href="" class="HufYellow" style="width: 120px;">Characters</a>
+						<ul>
+							<li><a href="students.html">Students</a></li>
+							<li><a href="adults.html">Adults</a></li>
+						</ul>
+					</li>
+					<li><a href="hogwarts.html" class="GryRed" style="width: 100px;">Hogwarts</a></li>
+					<li><a href="books.html" class="RavBlue" style="width: 75px;">Books</a></li>
+					<li><a href="index.html" class="SlyGreen" style="width: 75px;">Home</a></li>
+				</ul>
+			</header>
+		</div>
+		<div class="containerMain">
+			<br/><br/>
+			<div class="vertical-menu">
+				<h3>Harry Potter and the...</h3>
+				<p onclick="showSection('stone')">Sorcerer's Stone</p>
+				<p onclick="showSection('chamber')">Chamber of Secrets</p>
+				<p onclick="showSection('prisoner')">Prisoner of Azkaban</p>
+				<p onclick="showSection('goblet')">Goblet of Fire</p>
+				<p onclick="showSection('order')">Order of the Phoenix</p>
+				<p onclick="showSection('prince')">Half Blood Prince</p>
+				<p onclick="showSection('hallows')">Deathly Hallows</p>
+			</div>
+			
+			<div class="display-info">
+				<div class="mySlides" id="intro" align="center">
+					<h1>Select <br/>A  Book  To <br/>Learn  More</h1>
+				</div>
+				<div class="mySlides" id="stone" align="center">
+					<h2>Harry Potter and the Sorcerer's Stone</h2>
+					<a href="https://www.amazon.com/Harry-Potter-Sorcerers-Stone-Rowling/dp/059035342X/ref=sr_1_1?ie=UTF8&qid=1510722817&sr=8-1&keywords=harry+potter+and+the+sorcerer%27s+stone">
+					<img src="images/books/stone.jpg" alt="b1"/>
+					</a>
+					<br/><br/>
+					<p>Book Rating<br/>
+						4.45/5 Stars : <a href="https://www.goodreads.com/book/show/3.Harry_Potter_and_the_Sorcerer_s_Stone">GoodReads</a></p>
+					<br/><br/>
+					<p>Movie Rating<br/>
+						7.5/10 Stars : <a href="http://www.imdb.com/title/tt0241527/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=2240084082&pf_rd_r=1F3QASG3PC198SVPY27W&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=moviemeter&ref_=chtmvm_tt_86">IMDb</a></p>
+				</div>
+				<div class="mySlides" id="chamber" align="center">
+					<h2>Harry Potter and the Chamber of Secrets</h2>
+					<a href="https://www.amazon.com/Harry-Potter-Chamber-Secrets-Rowling/dp/0439064872/ref=pd_bxgy_14_img_2?_encoding=UTF8&psc=1&refRID=V3BFQ6DNVDV16EWV52X2">
+					<img src="images/books/chamber.jpg" alt="b2"/>
+					</a>
+					<br/><br/>
+					<p>Book Rating<br/>
+						4.38/5 Stars : <a href="https://www.goodreads.com/book/show/15881.Harry_Potter_and_the_Chamber_of_Secrets">GoodReads</a></p>
+					<br/><br/>
+					<p>Movie Rating<br/>
+						7.4/10 Stars : <a href="http://www.imdb.com/title/tt0295297/?ref_=tt_rec_tt">IMDb</a></p>
+				</div>
+				<div class="mySlides" id="prisoner" align="center">
+					<h2>Harry Potter and the Prisoner of Azkaban</h2>
+					<a href="https://www.amazon.com/Harry-Potter-Prisoner-Azkaban-Rowling/dp/0439136369/ref=pd_bxgy_14_img_2?_encoding=UTF8&psc=1&refRID=V36YD38CRXGHZRVEPQMC">
+					<img src="images/books/prisoner.jpg" alt="b3"/>
+					</a>
+					<br/><br/>
+					<p>Book Rating<br/>
+						4.53/5 Stars : <a href="https://www.goodreads.com/book/show/5.Harry_Potter_and_the_Prisoner_of_Azkaban">GoodReads</a></p>
+					<br/><br/>
+					<p>Movie Rating<br/>
+						7.8/10 Stars : <a href="http://www.imdb.com/title/tt0304141/?ref_=tt_rec_tt">IMDb</a></p>
+				</div>
+				<div class="mySlides" id="goblet" align="center">
+					<h2>Harry Potter and the Goblet of Fire</h2>
+					<a href="https://www.amazon.com/Harry-Potter-Goblet-Fire-Rowling/dp/0439139600/ref=pd_bxgy_14_img_3?_encoding=UTF8&psc=1&refRID=GBRKN7W06KRA4PQBPKE8">
+					<img src="images/books/goblet.jpg" alt="b4">
+					</a>
+					<br/><br/>
+					<p>Book Rating<br/>
+						4.53/5 Stars : <a href="https://www.goodreads.com/book/show/6.Harry_Potter_and_the_Goblet_of_Fire">GoodReads</a></p>
+					<br/><br/>
+					<p>Movie Rating<br/>
+						7.7/10 Stars : <a href="http://www.imdb.com/title/tt0330373/?ref_=tt_rec_tt">IMDb</a></p>
+				</div>
+				<div class="mySlides" id="order" align="center">
+					<h2>Harry Potter and the Order of the Phoenix</h2>
+					<a href="https://www.amazon.com/Harry-Potter-Order-Phoenix-Rowling/dp/0439358078/ref=pd_bxgy_14_img_2?_encoding=UTF8&psc=1&refRID=CMJC5SJKAMPMF9PWEK3R">
+					<img src="images/books/order.jpg" alt="b5">
+					</a>
+					<br/><br/>
+					<p>Book Rating<br/>
+						4.47/5 Stars : <a href="https://www.goodreads.com/book/show/2.Harry_Potter_and_the_Order_of_the_Phoenix">GoodReads</a></p>
+					<br/><br/>
+					<p>Movie Rating<br/>
+						7.5/10 Stars : <a href="http://www.imdb.com/title/tt0373889/?ref_=tt_rec_tt">IMDb</a></p>
+				</div>
+				<div class="mySlides" id="prince" align="center">
+					<h2>Harry Potter and the Half Blood Prince</h2>
+					<a href="https://www.amazon.com/Harry-Potter-Half-Blood-Prince-Book/dp/0439785960/ref=pd_bxgy_14_img_2?_encoding=UTF8&psc=1&refRID=TVXBYGF25P26MP4VQ6WH">
+					<img src="images/books/prince.jpg" alt="b6">
+					</a>
+					<br/><br/>
+					<p>Book Rating<br/>
+						4.54/5 Stars : <a href="https://www.goodreads.com/book/show/1.Harry_Potter_and_the_Half_Blood_Prince">GoodReads</a></p>
+					<br/><br/>
+					<p>Movie Rating<br/>
+						7.5/10 Stars : <a href="http://www.imdb.com/title/tt0417741/?ref_=tt_rec_tt">IMDb</a></p>
+				</div>
+				<div class="mySlides" id="hallows" align="center">
+					<h2>Harry Potter and the Deathly Hallows</h2>
+					<a href="https://www.amazon.com/Harry-Potter-Deathly-Hallows-Book/dp/0545139708/ref=pd_bxgy_14_img_2?_encoding=UTF8&psc=1&refRID=5GNS9YZV4D3121FZ157C">
+					<img src="images/books/hallows.jpg" alt="b7">
+					</a>
+					<br/><br/>
+					<p>Book Rating<br/>
+						4.62/5 Stars : <a href="https://www.goodreads.com/book/show/136251.Harry_Potter_and_the_Deathly_Hallows">GoodReads</a></p>
+					<br/><br/>
+					<p>Movie Rating<br/>
+						(pt1) 7.7/10 Stars : <a href="http://www.imdb.com/title/tt0926084/?ref_=tt_rec_tt">IMDb</a><br/>
+						(pt2) 8.1/10 Stars : <a href="http://www.imdb.com/title/tt1201607/?ref_=nv_sr_2">IMDb</a></p>
+						
+				</div>
+			</div>
+			
+			<div class="display-wide">
+				<div class="mySlides" id="stone" align="center">
+					<p>Synopsis: <br/></p>
+					<iframe id="synopsis" src="ss.txt" onload="viewSynopsis();" style="display: none;"></iframe>
+					<iframe width="300px" height="168.75px" src="https://www.youtube.com/embed/VyHV0BRtdxo" 
+					frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div class="mySlides" id="chamber" align="center">
+					<p>Synopsis: <br/>
+					Over the summer, Harry Potter is visited by a house elf named Dobby who warns Harry not to return to Hogwarts. When Harry tells the elf
+					that he has to return, Dobby begins wreaking havoc on the Dursley home. In repsonse, the Dursleys lock Harry in his bedroom. Concerned 
+					with the lack of correspondence from Harry, Ron and his two brothers Fred and George break Harry out of his muggle home. The rest of his 
+					summer is spent with the Weasleys. While shopping for school supplies with said family, Harry encounters the new Defence Against the Dark 
+					Arts professor. Lockhart is very focused on his fame, and demands that Harry join him in his photo shoot. Later in the book store, Harry 
+					runs into Draco's father, Lucius Malfoy, who almosts starts a fight with Mr Weasley. The rest of the summer passes without incident and the 
+					boys go with the Weasleys to the train platform. However, when they go to pass through the wall they find that it is sealed. As a result, 
+					they steal the Weasley's flying family car and fly to Hogwarts. Their flight to school didn't go well, however, and on their arrival they 
+					were given detention.
+					</p>
+					<p>
+					<iframe width="300px" height="168.75px;" src="https://www.youtube.com/embed/1bq0qff4iF8" 
+					frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div class="mySlides" id="prisoner" align="center">
+					<p>Synopsis: <br/>
+					
+					</p>
+					<iframe width="300px" height="168.75px;" src="https://www.youtube.com/embed/1ZdlAg3j8nI" 
+					frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div class="mySlides" id="goblet" align="center">
+					<p>Synopsis: <br/>
+					
+					</p>
+					<iframe width="300px" height="168.75px;" src="https://www.youtube.com/embed/3EGojp4Hh6I" 
+					frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div class="mySlides" id="order" align="center">
+					<p>Synopsis: <br/>
+					
+					</p>
+					<iframe width="300px" height="168.75px;" src="https://www.youtube.com/embed/y6ZW7KXaXYk" 
+					frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div class="mySlides" id="prince" align="center">
+					<p>Synopsis: <br/>
+					
+					</p>
+					<iframe width="300px" height="168.75px;" src="https://www.youtube.com/embed/sg81Lts5kYY" 
+					frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div class="mySlides" id="hallows" align="center">
+					<p>Synopsis: <br/>
+					
+					</p>
+					<iframe width="300px" height="168.75px;" src="https://www.youtube.com/embed/mObK5XD8udk" 
+					frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+			
+			<script>
+				var slideIndex = 1;
+				showDivs(slideIndex);
+
+				function showSection(thisID) {
+					var i;
+					var myID = thisID;
+					var x = document.getElementsByClassName("mySlides");
+					for (i = 0; i < x.length; i++) {
+						if (x[i].id != myID){
+							x[i].style.display = "none";
+						}
+						if (x[i].id == myID){
+							x[i].style.display = "block";
+						}
+					}
+					
+				}
+			</script>
+			<br/><br/>
+		</div>
+	</body>
+	<br/>
+	<footer class="containerFoot" align="center">
+		<p>All rights to the Harry Potter brand belong to JK Rowling
+		(book series rights) and Warner Bros (film rights)</p>
+		<h4 align="center">Links:</h4>
+		<a href="https://www.pottermore.com/" alt="PotterMore">Pottermore</a>
+		<a href="http://www.harrypottershop.com/" alt="PotterShop">Harry Potter Shop</a>
+		<a href="http://www.the-leaky-cauldron.org/" alt="LeakyCauldron">Leaky Cauldron</a>
+		<a href="http://www.mugglenet.com/" alt="MuggleNet">Muggle Net</a>
+	</footer>
+</html>

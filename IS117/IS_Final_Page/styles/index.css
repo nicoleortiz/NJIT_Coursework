@@ -1,0 +1,37 @@
+/* General Rules */
+p{
+	text-indent: 30px;
+}
+
+/* Scroll */
+.mySlides{
+	padding: 0px 25px;
+}
+
+/* Scroll Images */
+.mySlides img{
+	width: 300px;
+	height: 175px;
+}
+
+/* Buttons */
+.displayLeft{
+	position:absolute;
+	margin-top: 150px;
+}
+.displayRight{
+	position:absolute;
+	margin-left:787.5px;
+	margin-top: 150px;
+}
+
+/* Extra Links */
+td {
+	padding: 5px;
+	width: 150px;
+	border: 2px solid black;
+}
+img.edit {
+	width: 100px;
+	padding: 0px 30px;
+}

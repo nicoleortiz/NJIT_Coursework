@@ -1,0 +1,25 @@
+.houses img{
+	width: 183px;
+	height:225px;
+	padding: 0 5;
+}
+.houses p{
+	width: 700px;
+	background-color: white;
+	padding: 5px 10px;
+	text-align: center;
+	
+	font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+	font-style: normal;
+	font-variant: normal;
+}
+
+.diet{
+	width: 750px;
+}
+
+@media only screen and (max-width: 1050px) {
+  p{
+    font-size: 50%;
+  }
+}

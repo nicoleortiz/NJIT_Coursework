@@ -1,0 +1,116 @@
+/* Nav Bar */
+#heading{
+	font-family: Papyrus, fantasy;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+}
+#heading img{
+	float: left;
+}
+#heading ul{
+	font-size: 22.5px;
+	font-weight: bold;
+	padding-right: 5px;
+	list-style-type: none;
+	padding-top: 25px;
+	width: 800px;
+	margin: 0;
+	position: relative;
+}
+#heading ul li{
+	float: right;
+}
+#heading ul li a{
+	display: block;
+	width: 110px;
+	text-align: center;
+	padding: 5px;
+	text-decoration: none;
+	font-weight: bold;
+}
+#heading ul ul {
+    display: none;
+    position: absolute;
+    top: 33%;
+	left:80%;
+	width: 120px;
+}
+#heading ul ul li {
+	float: none;
+	background-color: white;
+	width: 120px;
+	border: 1px solid #cc9900;
+}
+#heading ul li:hover > ul {
+	display: block;
+}
+#heading > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* Container Classes */
+.containerNav{
+	margin: 0 auto;
+	width: 850px;
+	background-color: white;
+	overflow: show;
+	border: 1px solid black;
+	height: 100px;
+}
+.containerMain{
+	margin: 0 auto;
+	width:810px;
+	overflow: hidden;
+	background-image: url("../images/parchment.jpg");
+}
+.containerFoot{
+	margin: 0 auto;
+	width: 850px;
+	height:100px;
+	overflow: hidden;
+	padding-bottom: 5px;
+	background-color: white;
+	border: 1px solid black;
+	line-height: 10px;
+	font-size: 15px;
+}
+
+/* Colour Classes */
+.SlyGreen{
+	color: #006622;
+}
+.GryRed{
+	color: #b32400;
+}
+.HufYellow{
+	color: #cc9900;
+}
+.RavBlue{
+	color: #003d99;
+}
+
+/* Image Widths */
+.ShortLogo{
+	width: 95px;
+	height: 95px;
+	padding-left: 50px;
+}
+.TallLogo{
+	height: 120px;
+	padding-right: 25px;
+}
+
+/* Backgroung Control */
+body{
+	background-image: url("../images/background.jpg");
+}
+
+/* Footer Layout*/
+footer a{
+	padding: 0px 5px
+}

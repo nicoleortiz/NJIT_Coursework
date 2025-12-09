@@ -1,0 +1,34 @@
+{
+    "images": [
+        {
+            "imgPath": "img/places/sandyhook.jpg",
+            "imgLocation": "Sandy Hook, NJ",
+            "description": "Sandy Hook Beach",
+            "date": "04/04/2019"
+        },
+        {
+            "imgPath": "img/places/sevenpres.jpg",
+            "imgLocation": "Long Branch, NJ",
+            "description": "Seven Presidents Beach",
+            "date": "04/05/2019"
+        },
+        {
+            "imgPath": "img/places/wildwood.jpg",
+            "imgLocation": "Wildwood, NJ",
+            "description": "Wildwood Beach/Boardwalk",
+            "date": "04/06/2019"
+        },
+        {
+            "imgPath": "img/places/asbury.jpg",
+            "imgLocation": "Asbury, NJ",
+            "description": "Asbury Beach",
+            "date": "04/07/2019"
+        },
+        {
+            "imgPath": "img/places/capemay.jpg",
+            "imgLocation": "Cape May, NJ",
+            "description": "Cape May Beach",
+            "date": "04/08/2019"
+        }
+  ]
+}
