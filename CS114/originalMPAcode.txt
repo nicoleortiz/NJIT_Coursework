@@ -1,0 +1,44 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Scanner;
+
+/**
+ *
+ * @author Nicole
+ */
+public class MaxPrefixAverage {
+    private static int length;
+    private static int sum;
+    private static List<String> arr;
+    private static ArrayList<Integer> total;
+    
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+            length = s.nextInt();
+        s = new Scanner(System.in);
+            String a = s.nextLine();
+            //integers are added one at a time, loop it into list
+        sum=0;
+            
+        arr = Arrays.asList(a.split(" "));
+        total = new ArrayList<>();
+        doTheThing();
+        System.out.println(getMax());
+    }
+    
+    private static void doTheThing(){
+        for (int i=0; i<length; i++) {
+            sum += Integer.parseInt(arr.get(i));
+            total.add(i, sum/(i+1));
+        }
+    }
+    private static int getMax(){
+        int max = 0;
+        for(int i=0; i<total.size(); i++){
+            if(total.get(i) > max)
+                max = total.get(i);
+        }
+        return max;
+    }
+}
